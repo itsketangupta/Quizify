@@ -6,17 +6,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizify</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Assests/logo.png" type="image/x-icon">
 </head>
 
 <body>
 
     <nav>
-        <img src="Assests/Quizify.svg" width="223.78" height="68">
-        <li>Home</li>
-        <li>Features</li>
-        <li>FAQs</li>
+        <img src="Assests/Quizify.svg" height="60">
+        <div class="Quick_links">
+            <button>Home</button>
+            <button>Features</button>
+            <button>FAQs</button>
+        </div>
+        <div class="log_in">Log in</div>
     </nav>
-
+    <div class="main_section">
+        <div class="herosection">
+            <h1>Think You’re Smart? Prove It.</h1>
+            <p>Solve GK questions and trick your friends. Make Questions about you and find which your friend know most
+                about you.</p>
+            <button class="Sign_up">Sign up for free</button>
+            <div class="herosection_cards">
+                <div class="flashcard card">
+                    <h1>Flashcard</h1>
+                    <div class="page1"></div>
+                    <div class="page2">
+                        <p>여보세요?
+                            hello (on a call)
+                        </p>
+                    </div>
+                </div>
+                <div class="do_you_know_me_card card">
+                    <h1>Do You Know Me?</h1>
+                    <div class="page1">
+                        <div class="head">
+                            <div class="score">Score</div>
+                            <div class="result">Result</div>
+                            <div class="type">Type</div>
+                        </div>
+                        <div class="head_no">
+                            <div class="score">84%</div>
+                            <div class="result">76/90</div>
+                            <div class="type">Friend</div>
+                        </div>
+                        <div class="question_box">
+                            <div class="question_no">1.</div>
+                            <div class="question"></div>
+                        </div>
+                        <div class="options_box">
+                            <div class="option1 option">
+                                <button><img src="Assests/tick_option_red.svg" alt=""></button>
+                                <div class="option_no1">A.</div>
+                                <div class="option_txt1"></div>
+                            </div>
+                            <div class="option2 option">
+                                <button><img src="Assests/option.svg" alt=""></button>
+                                <div class="option_no2">B.</div>
+                                <div class="option_txt2"></div>
+                            </div>
+                            <div class="option3 option">
+                                <button><img src="Assests/option_green.svg" alt=""></button>
+                                <div class="option_no3">C.</div>
+                                <div class="option_txt3"></div>
+                            </div>
+                            <div class="option4 option">
+                                <button><img src="Assests/option.svg" alt=""></button>
+                                <div class="option_no4">D.</div>
+                                <div class="option_txt4"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="make_gk_content_card card">
+                    <h1>Make GK content</h1>
+                    <div class="page1">
+                        <div class="logo"><img src="Assests/Quizify.svg" alt="" height="34px"></div>
+                        <div class="chat_box"></div>
+                    </div>
+                </div>
+                <div class="memory_card card"></div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
