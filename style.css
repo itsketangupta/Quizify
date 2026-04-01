@@ -17,6 +17,15 @@ nav {
     width: 100%;
     height: 70px;
     position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    z-index: 1000;
+}
+
+body {
+    padding-top: 70px;
 }
 
 body::-webkit-scrollbar {
@@ -25,6 +34,12 @@ body::-webkit-scrollbar {
 
 nav img {
     cursor: pointer;
+    user-select: none;
+}
+
+nav button a {
+    text-decoration: none;
+    color: #000;
 }
 
 nav button {
@@ -40,6 +55,9 @@ nav button {
     background-color: #EFEFEF;
     height: auto;
     width: 100%;
+    position: relative;
+    z-index: 1;
+    padding-top: 65px; 
 }
 
 .Quick_links {
@@ -63,28 +81,28 @@ nav .log_in {
     user-select: none;
 }
 
-.herosection {
+#Home {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     height: auto;
+    margin-bottom: 150px;
 }
 
-.herosection h1 {
+#Home h1 {
     font-size: 40px;
     margin-bottom: 30px;
-    margin-top: 144px;
     font-weight: 100;
 }
 
-.herosection p {
+#Home p {
     font-size: 15px;
     margin-bottom: 40px;
     width: 411px;
 }
 
-.herosection .Sign_up {
+#Home .Sign_up {
     background-color: blue;
     color: #FFFFFF;
     border-radius: 100px;
@@ -102,7 +120,7 @@ nav .log_in {
     user-select: none;
 }
 
-.herosection .herosection_cards .card {
+#Home .herosection_cards .card {
     width: 300px;
     height: 376px;
     background-color: #FFFFFF;
@@ -111,14 +129,14 @@ nav .log_in {
     margin-bottom: 100px;
 }
 
-.herosection .herosection_cards {
+#Home .herosection_cards {
     display: flex;
     gap: 59px;
     overflow-x: auto;
     user-select: none;
 }
 
-.herosection .herosection_cards .flashcard h1 {
+#Home .herosection_cards .flashcard h1 {
     color: #FFFFFF;
     display: flex;
     justify-content: space-evenly;
@@ -128,7 +146,7 @@ nav .log_in {
     font-size: 30px;
 }
 
-.herosection .herosection_cards::-webkit-scrollbar {
+#Home .herosection_cards::-webkit-scrollbar {
     display: none;
 }
 
@@ -139,42 +157,42 @@ nav .log_in {
         overflow-x: auto;
     }
 
-    .herosection .herosection_cards {
+    #Home .herosection_cards {
         display: flex;
         overflow-x: auto;
     }
 
-    .herosection .herosection_cards .card {
+    #Home .herosection_cards .card {
         flex: 0 0 300px;
     }
 
-    .herosection .herosection_cards::-webkit-scrollbar {
+    #Home .herosection_cards::-webkit-scrollbar {
         display: none;
     }
 }
 
-.herosection .herosection_cards .flashcard {
+#Home .herosection_cards .flashcard {
     background-color: #423FD8;
     position: relative;
 }
 
-.herosection .herosection_cards .do_you_know_me_card {
+#Home .herosection_cards .do_you_know_me_card {
     background-color: #FFC38C;
     position: relative;
 
 }
 
-.herosection .herosection_cards .make_gk_content_card {
+#Home .herosection_cards .make_gk_content_card {
     background-color: #98E3FF;
     position: relative;
 }
 
-.herosection .herosection_cards .memory_card {
+#Home .herosection_cards .memory_card {
     background-color: #FFDC62;
     position: relative;
 }
 
-.flashcard .page2 {
+#Home .flashcard .page2 {
     width: 218px;
     height: 122px;
     background-color: #ffffff;
@@ -190,14 +208,14 @@ nav .log_in {
     justify-content: center;
 }
 
-.flashcard .page2 p {
+#Home .flashcard .page2 p {
     font-size: 26px;
     text-align: center;
     width: 166px;
     padding-top: 40px;
 }
 
-.flashcard .page1 {
+#Home .flashcard .page1 {
     width: 218px;
     height: 122px;
     background-color: #ffffff;
@@ -207,9 +225,9 @@ nav .log_in {
     left: 40px;
 }
 
-.herosection .herosection_cards .do_you_know_me_card h1,
-.herosection .herosection_cards .make_gk_content_card h1,
-.herosection .herosection_cards .memory_card h1 {
+#Home .herosection_cards .do_you_know_me_card h1,
+#Home .herosection_cards .make_gk_content_card h1,
+#Home .herosection_cards .memory_card h1 {
     display: flex;
     justify-content: space-evenly;
     margin: 0;
@@ -217,7 +235,7 @@ nav .log_in {
     font-size: 30px;
 }
 
-.herosection .herosection_cards .do_you_know_me_card .page1 {
+#Home .herosection_cards .do_you_know_me_card .page1 {
     width: 260px;
     height: 272px;
     background-color: #ffffff;
@@ -228,7 +246,7 @@ nav .log_in {
     bottom: 0px;
 }
 
-.head {
+.do_you_know_me_card .head {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -237,7 +255,7 @@ nav .log_in {
     color: #808080;
 }
 
-.head_no {
+.do_you_know_me_card .head_no {
     display: flex;
     justify-content: space-evenly;
     width: 100%;
@@ -245,13 +263,13 @@ nav .log_in {
     font-size: 26px;
 }
 
-.question_box {
+.do_you_know_me_card .question_box {
     display: flex;
     padding: 20px 0px 20px 5px;
     width: 100%;
 }
 
-.question {
+.do_you_know_me_card .question {
     width: 226px;
     height: 10px;
     background-color: #EFEFEF;
@@ -261,7 +279,7 @@ nav .log_in {
     margin-top: 4px;
 }
 
-.options_box {
+.do_you_know_me_card .options_box {
     display: flex;
     flex-direction: column;
     gap: 11px;
@@ -269,22 +287,22 @@ nav .log_in {
     margin-top: 10px;
 }
 
-.options_box button {
+.do_you_know_me_card .options_box button {
     border: none;
     outline: none;
     background-color: transparent;
 }
 
-.options_box .option {
+.do_you_know_me_card .options_box .option {
     display: flex;
     width: 100%;
 }
 
-.options_box .option img {
+.do_you_know_me_card .options_box .option img {
     display: flex;
 }
 
-.option_txt1 {
+.do_you_know_me_card .option_txt1 {
     margin-left: 10px;
     margin-top: 4px;
     background-color: #BF0606;
@@ -294,7 +312,7 @@ nav .log_in {
     border: 1px solid #BF0606;
 }
 
-.option_txt2 {
+.do_you_know_me_card .option_txt2 {
     margin-left: 10px;
     margin-top: 4px;
     border-radius: 16px;
@@ -303,7 +321,7 @@ nav .log_in {
     background-color: #EFEFEF;
 }
 
-.option_txt3 {
+.do_you_know_me_card .option_txt3 {
     margin-left: 10px;
     margin-top: 4px;
     background-color: #008000;
@@ -312,7 +330,7 @@ nav .log_in {
     height: 10px;
 }
 
-.option_txt4 {
+.do_you_know_me_card .option_txt4 {
     margin-left: 10px;
     margin-top: 4px;
     border-radius: 16px;
@@ -321,19 +339,19 @@ nav .log_in {
     background-color: #EFEFEF;
 }
 
-.option_no1,
-.option_no2,
-.option_no3,
-.option_no4 {
+.do_you_know_me_card .option_no1,
+.do_you_know_me_card .option_no2,
+.do_you_know_me_card .option_no3,
+.do_you_know_me_card .option_no4 {
     margin-left: 10px;
 }
 
-.option_no1 {
+.do_you_know_me_card .option_no1 {
     color: #BF0606;
 }
 
 
-.option_no3 {
+.do_you_know_me_card .option_no3 {
     color: #008000;
 }
 
@@ -348,19 +366,208 @@ nav .log_in {
     bottom: 0px;
 }
 
-.make_gk_content_card .page1 .logo img{
-    width:175px;
+.make_gk_content_card .page1 .logo img {
+    width: 175px;
     height: 150px;
     margin-top: -35px;
     margin-left: 20px;
 }
 
-.chat_box {
+.make_gk_content_card .chat_box {
     width: 193px;
     height: 100px;
     background-color: #EFEFEF;
     border-radius: 10px;
-    /* box-shadow: 5px 5px 10px rgb(167, 167, 167); */
     display: flex;
     font-size: 20px;
+    margin-top: -40px;
+    margin-left: 15px;
+}
+
+.make_gk_content_card .chat_box h2 {
+    margin-left: -140px;
+    margin-top: 10px;
+    font-size: 23px;
+    font-weight: 100;
+}
+
+.make_gk_content_card .chat_box .limitation_no {
+    margin-left: -20px;
+    margin-top: 108px;
+    font-size: 18px;
+    color: #DDDADA;
+}
+
+.make_gk_content_card .chat_box .send_button {
+    background-color: #0000FF;
+    color: #FFFFFF;
+    cursor: pointer;
+    padding: 13px 30px;
+    width: 91px;
+    height: 45px;
+    font-size: 18px;
+    margin-left: -85px;
+    margin-top: 134px;
+    border-radius: 100px;
+}
+
+.memory_card .page2 h3,
+.memory_card .page1 h3 {
+    font-size: 20px;
+    font-weight: 200;
+    margin-top: 9px;
+    margin-left: 34px;
+    margin-bottom: 5px;
+}
+
+.memory_card .page2 {
+    width: 183.49px;
+    height: 184.88px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transform: rotate(-15deg);
+    position: absolute;
+    top: 80px;
+    left: 26px;
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+}
+
+.memory_card .page1 {
+    width: 183.49px;
+    height: 184.88px;
+    border-radius: 15px;
+    background-color: #FFFFFF;
+    transform: rotate(15deg);
+    position: absolute;
+    top: 146px;
+    left: 80px;
+    box-shadow: 5px 5px 10px rgb(167, 167, 167);
+}
+
+.memory_card .page2 p {
+    font-size: 11px;
+    text-align: center;
+    width: 110.77px;
+    height: 26.32px;
+    color: #575757;
+    margin-top: 12px;
+    margin-left: 14px;
+}
+
+.memory_card .page2 .q {
+    display: flex;
+}
+
+.memory_card .page2 .q_ans {
+    width: 166px;
+    height: 33px;
+    background-color: #D3FFC5;
+    border-top-left-radius: 10px;
+    margin-left: 7px;
+    margin-top: -7px;
+    border-bottom: 1px solid #00A000;
+    padding: 9px;
+    color: #00A000;
+}
+
+.memory_card .page2 .submit {
+    background-color: blue;
+    width: 65px;
+    height: 22px;
+    border-radius: 5px;
+    margin-top: 9px;
+    margin-left: 105px;
+}
+
+.memory_card .page2 .submit img {
+    margin-top: -3px;
+    margin-left: 18px;
+}
+
+.memory_card .page1 .space img {
+    margin-left: 108px;
+    transform: rotate(79deg);
+    margin-top: 10px;
+}
+
+.options .option1 {
+    width: 68.94px;
+    height: 26.84px;
+    background-color: #FFC1AB;
+    border: 1px solid #FF0000;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 20px;
+    color: #FF0000;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option2 {
+    width: 68.94px;
+    height: 26.84px;
+    background-color: #ffffff;
+    border: 1px solid #E7E7E7;
+    border-radius: 5px;
+    margin-top: -10px;
+    margin-left: 10px;
+    color: #E7E7E7;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option3 {
+    width: 68.94px;
+    height: 26.84px;
+    background-color: #FFFFFF;
+    border: 1px solid #FFE7E7E7;
+    border-radius: 5px;
+    margin-left: 20px;
+    color: #E7E7E7;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .option4 {
+    width: 68.94px;
+    height: 26.84px;
+    background-color: #D3FFC5;
+    border: 1px solid #00E400;
+    border-radius: 5px;
+    margin-left: 10px;
+    color: #314C1C;
+    font-size: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.options .row1,
+.options .row2 {
+    display: flex;
+    margin-top: 10px;
+}
+
+.Learn_language_with_Fun {
+    display: flex;
+}
+
+.Learn_language_with_Fun .description {
+    width: 50%;
+    padding: 20px;
+}
+
+.Learn_language_with_Fun .img {
+    width: 50%;
+}
+
+.Learn_language_with_Fun .img .page {
+    width: 659px;
+    height: 400px;
 }

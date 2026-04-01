@@ -6,22 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quizify</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="Assests/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="Assests/logo.svg" type="image/x-icon">
 </head>
 
 <body>
 
     <nav>
-        <img src="Assests/Quizify.svg" height="60">
+        <a href="index.html"><img src="Assests/Quizify.svg" height="60"></a>
         <div class="Quick_links">
-            <button>Home</button>
-            <button>Features</button>
-            <button>FAQs</button>
+            <button><a href="#Home">Home</a></button>
+            <button><a href="#Features">Features</a></button>
+            <button><a href="#Home">FAQs</a></button>
         </div>
         <div class="log_in">Log in</div>
     </nav>
     <div class="main_section">
-        <div class="herosection">
+        <div id="Home">
             <h1>Think You’re Smart? Prove It.</h1>
             <p>Solve GK questions and trick your friends. Make Questions about you and find which your friend know most
                 about you.</p>
@@ -81,13 +81,65 @@
                     <h1>Make GK content</h1>
                     <div class="page1">
                         <div class="logo"><img src="Assests/Quizify.svg" alt="" height="34px"></div>
-                        <div class="chat_box"></div>
+                        <div class="chat_box">
+                            <h2>
+                                <pre>
+                                Create
+                                flashcards on
+                                photosynthesis
+                            </pre>
+                            </h2>
+                            <div class="limitation_no">35/100,000</div>
+                            <div class="send_button">Send</div>
+                        </div>
                     </div>
                 </div>
-                <div class="memory_card card"></div>
+                <div class="memory_card card">
+                    <h1>Memory Cards</h1>
+                    <div class="page1">
+                        <h3>Memory Cards</h3>
+                        <hr>
+                        <div class="space"><img src="Assests/space.svg" alt=""></div>
+                        <div class="options">
+                            <div class="row1">
+                                <div class="option1">Black Hole</div>
+                                <div class="option2">Asteroids</div>
+                            </div>
+                            <div class="row2">
+                                <div class="option3">Paths</div>
+                                <div class="option4">Milky way</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="page2">
+                        <h3>Memory Cards</h3>
+                        <hr>
+                        <div class="q">
+                            <p>
+                                What is the Earth’s primary
+                                atmosphere gas?
+                            </p>
+                            <div class="q_img"><img src="Assests/earth.svg" alt=""></div>
+                        </div>
+                        <div class="q_ans">Nitrogen</div>
+                        <div class="submit"><img src="Assests/Done.svg" alt=""></div>
+                    </div>
+                </div>
             </div>
         </div>
+        <div id="Features">
+            <div class="Learn_language_with_Fun">
+                <div class="description"></div>
+                <div class="img">
+                    <div class="page"></div>
+                </div>
+            </div>
+            <div class="Find_who_is_your_real_friend"></div>
+            <div class="Quizify_AI"></div>
+            <div class="Solve_GK_questions_and_trick_your_friends"></div>
+        </div>
     </div>
+
 </body>
 
 </html>
