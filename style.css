@@ -951,6 +951,7 @@ nav .log_in {
     border-radius: 100px;
     color: #FFFFFF;
     padding: 13px 30px;
+    cursor: pointer;
 }
 
 .Quizify_AI .img .page .main_section .chat_box .chat_style img {
@@ -1121,6 +1122,15 @@ nav .log_in {
     justify-content: center;
 }
 
+#FAQs pre {
+    font-size: 67px;
+    margin-left: -20px;
+}
+
+.hamburger {
+    display: none;
+}
+
 @media screen and (max-width: 1083px) {
 
     .features_cards {
@@ -1161,7 +1171,7 @@ nav .log_in {
 
     .Find_who_is_your_real_friend .description,
     .Solve_GK_questions_and_trick_your_friends .description {
-        margin-right: -4vw;
+        margin-right: -11vw;
     }
 
     .Find_who_is_your_real_friend .img,
@@ -1189,7 +1199,7 @@ nav .log_in {
     }
 
     .left_cards .description {
-        margin-right: -36px;
+        margin-right: -198px;
     }
 
     .left_cards .img {
@@ -1213,19 +1223,19 @@ nav .log_in {
     }
 
     .right_cards .img {
-        margin-right: -100px;
+        margin-right: -25px;
     }
 
     .left_cards .description {
-        margin-right: -60px;
+        margin-right: -23px;
     }
 
     .left_cards .img {
-        margin-left: -90px;
+        margin-left: 29px;
     }
 
     .right_cards .description {
-        margin-left: -90px;
+        margin-left: -13px;
     }
 }
 
@@ -1239,6 +1249,7 @@ nav .log_in {
     .herosection .herosection_cards {
         display: flex;
         overflow-x: auto;
+        margin-bottom: -127px;
     }
 
     .herosection .herosection_cards .card {
@@ -1248,4 +1259,140 @@ nav .log_in {
     .herosection .herosection_cards::-webkit-scrollbar {
         display: none;
     }
+}
+
+@media screen and (max-width: 602px) {
+
+    nav .Quick_links,
+    nav .log_in {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+.hamburger #menuToggle {
+    display: block;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.hamburger #menuToggle a {
+    text-decoration: none;
+    color: #000000;
+    transition: color 0.3s ease;
+}
+
+.hamburger #menuToggle a:hover {
+    color: tomato;
+}
+
+.hamburger #menuToggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+.hamburger #menuToggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    background: #010101;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0),
+        opacity 0.55s ease;
+}
+
+.hamburger #menuToggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.hamburger #menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.hamburger #menuToggle input:checked~span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+}
+
+.hamburger #menuToggle input:checked~span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.hamburger #menuToggle input:checked~span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.hamburger #menu {
+    position: absolute;
+    right: -24px;
+    width: 100vw;
+    height: 100vh;
+    margin: 2.6vh 0 0 -50px;
+    padding: 50px;
+    padding-top: 125px;
+    box-sizing: border-box;
+    overflow-y: auto;
+    background: #ededed;
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
+}
+
+.hamburger #menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.hamburger #menu li label {
+    cursor: pointer;
+}
+
+.hamburger #menuToggle input:checked~ul {
+    transform: none;
+}
+
+.hamburger #menuToggle ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 579px) {
+  .main_section {
+    width: calc(100% + (579px - 100vw));
+  }
+}
+
+#Faqs h1 {
+    font-size: 67px;
+    font-weight: 100;
+    margin-left: 166px;
+    width: 267px;
 }

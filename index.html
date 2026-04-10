@@ -7,6 +7,7 @@
     <title>Quizify</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="Assests/logo.svg" type="image/x-icon">
+    <script defer src="script.js"></script>
 </head>
 
 <body>
@@ -16,9 +17,41 @@
         <div class="Quick_links">
             <button><a href="#Home">Home</a></button>
             <button><a href="#Features">Features</a></button>
-            <button><a href="#Home">FAQs</a></button>
+            <button><a href="#FAQs">FAQs</a></button>
         </div>
         <div class="log_in">Log in</div>
+        <div class="hamburger">
+            <div id="menuToggle">
+                <input type="checkbox" id="menuCheckbox" />
+                <span></span>
+                <span></span>
+                <span></span>
+                <ul id="menu">
+                    <li>
+                        <a href="#Home">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Home</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#Features">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">About</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#FAQs">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">Faqs</label>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#FAQs">
+                            <label for="menuCheckbox" onclick="this.parentNode.click();">
+                                <p>Log in</p>
+                            </label>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </nav>
     <div class="main_section" id="Home">
         <div class="herosection">
