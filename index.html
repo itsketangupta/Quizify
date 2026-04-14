@@ -13,13 +13,12 @@
 <body>
 
     <nav>
-        <a href="index.html"><img src="Assests/Quizify.svg" height="60"></a>
+        <div class="logo"><a href="index.html"><img src="Assests/Quizify.svg" height="60"></a></div>
         <div class="Quick_links">
             <button><a href="#Home">Home</a></button>
             <button><a href="#Features">Features</a></button>
             <button><a href="#FAQs">FAQs</a></button>
         </div>
-        <div class="log_in">Log in</div>
         <div class="hamburger">
             <div id="menuToggle">
                 <input type="checkbox" id="menuCheckbox" />
@@ -42,13 +41,6 @@
                             <label for="menuCheckbox" onclick="this.parentNode.click();">Faqs</label>
                         </a>
                     </li>
-                    <li>
-                        <a href="#FAQs">
-                            <label for="menuCheckbox" onclick="this.parentNode.click();">
-                                <p>Log in</p>
-                            </label>
-                        </a>
-                    </li>
                 </ul>
             </div>
         </div>
@@ -58,7 +50,10 @@
             <h1>Think You’re Smart? Prove It.</h1>
             <p>Solve GK questions and trick your friends. Make Questions about you and find which your friend know most
                 about you.</p>
-            <button class="Sign_up">Sign up for free</button>
+            <div class="bubble">
+                Be the first to try Quizify when we launch.
+            </div>
+            <button class="Sign_up">Join the Waitlist</button>
             <div class="herosection_cards">
                 <div class="flashcard card">
                     <h1>Flashcard</h1>
@@ -336,6 +331,94 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="FAQs">
+            <div class="container">
+                <div class="h1_with_tabs">
+                    <h1>Frequently Asked Questions</h1>
+
+                    <div class="tabs">
+                        <div class="tab active" data-tab="general">General</div>
+                        <div class="tab" data-tab="product">Product & Usage</div>
+                        <div class="tab" data-tab="pricing">Pricing</div>
+                    </div>
+                </div>
+
+                <div class="faq-box">
+                    <div class="faq-content active" id="general">
+                        <div class="faq-item">
+                            <div class="faq-question">What is Quizify? <span><img src="Assests/plus.svg" alt=""></span>
+                            </div>
+                            <div class="faq-answer">Quizify is a platform where you can create quizzes, flashcards, and
+                                fun “Do You Know Me?” tests to challenge your friends.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Do I need an account to use Quizify? <span><img
+                                        src="Assests/plus.svg" alt=""></span>
+                            </div>
+                            <div class="faq-answer">Yes you require account to explore features using your account,
+                                creating
+                                quizzes and saving progress requires login.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">Who can use Quizify? <span><img src="Assests/plus.svg"
+                                        alt=""></span>
+                            </div>
+                            <div class="faq-answer">Anyone! Students, friends, or anyone who wants to learn or have fun
+                                with quizzes.</div>
+                        </div>
+                    </div>
+
+                    <div class="faq-content" id="product">
+                        <div class="faq-item">
+                            <div class="faq-question">How do I create a quiz? <span><img src="Assests/plus.svg"
+                                        alt=""></span></div>
+                            <div class="faq-answer">Just sign up, go to the dashboard, and click on “Create Quiz” to
+                                start.</div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-question">What is the “Do You Know Me?” test? <span><img
+                                        src="Assests/plus.svg" alt=""></span></div>
+                            <div class="faq-answer">It’s a fun quiz where you create questions about yourself and share
+                                with friends to see who knows you best.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">How does Quizify AI work? <span><img src="Assests/plus.svg"
+                                        alt=""></span></div>
+                            <div class="faq-answer">Quizify AI helps you generate GK questions and Find who is your real
+                                friend automatically based on your topic.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I share my quizzes with friends? <span><img
+                                        src="Assests/plus.svg" alt=""></span></div>
+                            <div class="faq-answer">Yes, you can share quizzes using a link and track their scores.
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">What are flashcards and memory cards? <span><img
+                                        src="Assests/plus.svg" alt=""></span></div>
+                            <div class="faq-answer">Flashcards help you learn quickly, while memory cards improve recall
+                                through repeated practice.</div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">Can I track my score and progress? <span><img
+                                        src="Assests/plus.svg" alt=""></span></div>
+                            <div class="faq-answer">Yes, Quizify shows your results, scores, and performance stats.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-content" id="pricing">
+                        <div class="faq-item">
+                            <div class="faq-question">Is it free? <span><img src="Assests/plus.svg" alt=""></span></div>
+                            <div class="faq-answer">We dont thought the priceing for now.</div>
                         </div>
                     </div>
                 </div>
