@@ -38,3 +38,23 @@ document.querySelectorAll(".faq-item").forEach((item, index) => {
     }
   });
 });
+
+function showForm() {
+  document.getElementById("form").style.display = "block";
+
+  document.getElementById("Sign_up").style.display = "none";
+}
+
+async function saveEmail() {
+  const email = document.getElementById("email").value;
+
+  await fetch("/api/save", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ email })
+  });
+
+  alert("Saved 🚀");
+}

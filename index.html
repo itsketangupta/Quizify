@@ -47,13 +47,17 @@
     </nav>
     <div class="main_section" id="Home">
         <div class="herosection">
-            <h1>Think You’re Smart? Prove It.</h1>
+            <h1 data-key="hero_title">Think You’re Smart? Prove It.</h1>
             <p>Solve GK questions and trick your friends. Make Questions about you and find which your friend know most
                 about you.</p>
             <div class="bubble">
                 Be the first to try Quizify when we launch.
             </div>
-            <button class="Sign_up">Join the Waitlist</button>
+            <button onclick="showForm()" id="Sign_up">Join the Waitlist</button>
+            <div id="form" style="display: none;">
+                <input type="email" id="email">
+                <button onclick="saveEmail()">Join</button>
+            </div>
             <div class="herosection_cards">
                 <div class="flashcard card">
                     <h1>Flashcard</h1>
@@ -424,6 +428,47 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="upper_footer_part">
+                <div class="website_content">
+                    <div class="logo">
+                        <img src="Assests/Quizify.svg" alt="" width="177"
+                            style="margin-bottom: 21px; user-select: none;">
+                    </div>
+                    <div class="txt" style="width: 197px; font-size: 13px;">All in one website learning Gk, Language,
+                        Test
+                        you friends etc.</div>
+                </div>
+                <div class="links_box">
+                    <div class="quick_links link_line">
+                        <h1>Quick links</h1>
+                        <div class="links">
+                            <div class="link"><a href="#Home">Home</a></div>
+                            <div class="link"><a href="#Features">Features</a></div>
+                            <div class="link"><a href="#FAQs">FAQs</a></div>
+                        </div>
+                    </div>
+                    <div class="connect link_line">
+                        <h1>Connect</h1>
+                        <div class="links">
+                            <div class="link"><a href="mailto:usequizify@gmail.com">Contact Us</a></div>
+                        </div>
+                    </div>
+                    <div class="resources link_line">
+                        <h1>Resources</h1>
+                        <div class="links">
+                            <div class="link"><a href="">Sign up</a></div>
+                            <div class="link"><a href="">Terms</a></div>
+                            <div class="link"><a href="">Privacy</a></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="line"
+                style="width: 91.65vw; height: 1px; background-color: #BDBDBD; margin-left: 3.75vw; margin-top: 68px;">
+            </div>
+            <p style="margin-left: 5.75vw; margin-top: 15px;">&copy; 2026 Quizify. All rights reserved.</p>
+        </footer>
     </div>
 
 </body>
