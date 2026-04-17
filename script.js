@@ -48,6 +48,8 @@ function showForm() {
 async function saveEmail() {
   const email = document.getElementById("email").value;
 
+  console.log("Button clicked"); // 👈 add this
+
   await fetch("/api/save", {
     method: "POST",
     headers: {
