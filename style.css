@@ -1339,7 +1339,7 @@ nav button {
     padding: 0 15px;
     background-color: transparent;
     border-radius: 100px;
-    top: 206px;
+    top: 188px;
     animation: 4s infinite ease-in-out;
     border: 1px solid #D9D9D9;
     user-select: none;
@@ -1566,6 +1566,26 @@ nav button {
         display: none;
     }
 }
+
+@media screen and (max-width: 666px) {
+
+    #Features {
+        margin-left: -3%;
+    }
+}
+@media screen and (max-width: 624px) {
+
+    #Features {
+        /* margin-left: -4%; */
+        transform: scale(0.8);
+    }
+}
+/* @media screen and (max-width: 666px) {
+
+    #Features {
+        margin-left: -8%;
+    }
+} */
 
 @media screen and (max-width: 713px) {
 
