@@ -1571,27 +1571,67 @@ nav button {
     }
 }
 
+@media screen and (max-width: 510px) {
+
+    #Features {
+        transform: scale(0.8) !important;
+        margin-top: -300px !important;
+    }
+
+    #FAQs {
+        margin-top: -402px !important;
+    }
+}
+
+@media screen and (max-width: 440px) {
+
+    .herosection h1 {
+        font-size: 35px;
+        margin-bottom: 7px;
+    }
+
+    .herosection .bubble {
+        top: 181px;
+    }
+
+}
+
+@media screen and (max-width: 453px) {
+
+    #Features {
+        transform: scale(0.7) !important;
+        margin-top: -400px !important;
+    }
+
+    #FAQs {
+        margin-top: -532px !important;
+    }
+}
+
+@media screen and (max-width: 394px) {
+
+    #Features {
+        transform: scale(0.6) !important;
+        margin-top: -600px !important;
+    }
+
+    #FAQs .container .h1_with_tabs h1 {
+        font-size: 50px;
+    }
+
+    #FAQs {
+        margin-top: -652px !important;
+    }
+}
+
 @media screen and (max-width: 666px) {
 
     #Features {
-        margin-left: -3%;
+        margin-left: calc(-20px - (666px - 100vw));
+        margin-right: calc(-20px - (666px - 100vw));
     }
+
 }
-
-@media screen and (max-width: 624px) {
-
-    #Features {
-        /* margin-left: -4%; */
-        transform: scale(0.8);
-    }
-}
-
-/* @media screen and (max-width: 666px) {
-
-    #Features {
-        margin-left: -8%;
-    }
-} */
 
 @media screen and (max-width: 713px) {
 
