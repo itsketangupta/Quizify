@@ -1351,6 +1351,10 @@ nav button {
         margin-bottom: -80px;
     }
 
+    .herosection .bubble {
+        top: 207px;
+    }
+
     .features_cards {
         display: flex;
         flex-direction: column;
@@ -1573,6 +1577,7 @@ nav button {
         margin-left: -3%;
     }
 }
+
 @media screen and (max-width: 624px) {
 
     #Features {
@@ -1580,6 +1585,7 @@ nav button {
         transform: scale(0.8);
     }
 }
+
 /* @media screen and (max-width: 666px) {
 
     #Features {
