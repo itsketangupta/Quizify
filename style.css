@@ -1575,6 +1575,7 @@ nav button {
     .herosection .herosection_cards {
         gap: 19px;
         transform: scale(0.9);
+        width: 114% !important;
     }
 
 }
@@ -1875,6 +1876,37 @@ footer .links_box .link_line .links .link a {
     .herosection p {
         width: 268px;
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    #email {
+        width: 250px !important;
+        margin-left: -13px;
+    }
+}
+
+@media screen and (max-width: 453px) {
+    #form {
+        margin-left: 39px;
+    }
+}
+
+@media screen and (max-width: 359px) {
+    #email {
+        width: 200px !important;
+        margin-left: -36px;
+    }
+
+    #msg {
+        margin-left: -114px !important;
+    }
+}
+
+@media screen and (max-width: 345px) {
+    .herosection .herosection_cards {
+        gap: 9px;
+        width: 114% !important;
     }
 }
 
