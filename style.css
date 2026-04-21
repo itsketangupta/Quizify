@@ -1861,3 +1861,35 @@ footer .links_box .link_line .links .link a {
         padding-top: 154px;
     }
 }
+
+@media screen and (max-width: 318px) {
+    .herosection .hero_title {
+        width: 229px;
+        text-align: center;
+    }
+
+    .herosection .bubble {
+        top: 222px;
+    }
+
+    .herosection p {
+        width: 268px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 393px) {
+    #FAQs .container .h1_with_tabs h1 {
+        margin-left: 13px;
+    }
+
+    #FAQs .tabs {
+        gap: 17px;
+        margin-left: 15px;
+    }
+
+    #FAQs .faq-item {
+        width: 292px;
+        margin-left: 11px;
+    }
+}
