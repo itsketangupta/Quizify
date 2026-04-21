@@ -1862,7 +1862,7 @@ footer .links_box .link_line .links .link a {
     }
 }
 
-@media screen and (max-width: 318px) {
+@media screen and (max-width: 359px) {
     .herosection .hero_title {
         width: 229px;
         text-align: center;
