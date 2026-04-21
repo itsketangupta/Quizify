@@ -1893,3 +1893,36 @@ footer .links_box .link_line .links .link a {
         margin-left: 11px;
     }
 }
+
+.shake {
+    animation: shake 0.3s;
+    border: 2px solid red;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+
+    25% {
+        transform: translateX(-5px);
+    }
+
+    50% {
+        transform: translateX(5px);
+    }
+
+    75% {
+        transform: translateX(-5px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+#msg {
+    margin-top: 10px;
+    font-size: 14px;
+    margin-left: 5px;
+}

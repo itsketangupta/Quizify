@@ -45,18 +45,50 @@ function showForm() {
   document.getElementById("Sign_up").style.display = "none";
 }
 
-async function saveEmail() {
-  const email = document.getElementById("email").value;
+let emails = [];
 
-  console.log("Button clicked"); // 👈 add this
+async function handleEmail() {
+  const input = document.getElementById("email");
+  const msg = document.getElementById("msg");
+  const email = input.value.trim();
 
-  await fetch("/api/save", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ email })
-  });
+  if (!email.endsWith("@gmail.com")) {
+    input.classList.add("shake");
+    input.style.border = "1px solid red";
+    msg.innerText = "Only Gmail allowed!";
+    msg.style.color = "red";
 
-  alert("Saved 🚀");
+    setTimeout(() => input.classList.remove("shake"), 400);
+    return;
+  }
+
+  if (emails.includes(email)) {
+    msg.innerText = "You already joined the waitlist!";
+    msg.style.color = "orange";
+    return;
+  }
+
+  try {
+    const res = await fetch("/api/save", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify({ email })
+    });
+
+    if (res.ok) {
+      emails.push(email);
+      msg.innerText = "Added successfully 🎉";
+      msg.style.color = "green";
+      input.value = "";
+    } else {
+      msg.innerText = "Error, try again!";
+      msg.style.color = "red";
+    }
+
+  } catch (err) {
+    msg.innerText = "Server error!";
+    msg.style.color = "red";
+  }
 }
