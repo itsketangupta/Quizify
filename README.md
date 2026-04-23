@@ -31,14 +31,7 @@ Quizify is an AI-powered quiz platform that helps users generate, explore, and i
 
 ## 📸 Preview
 
-> Add screenshots here (recommended)
-
-```
 <img width="1920" height="1004" alt="image" src="https://github.com/user-attachments/assets/60375398-b780-4de7-b91c-ec956b3dcaf2" />
-
-```
-
----
 
 ## 🚀 Getting Started
 
