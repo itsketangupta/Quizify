@@ -81,7 +81,7 @@ If you’d like to improve Quizify:
 If you have ideas, feedback, or want to collaborate:
 
 * Email: [mrketanartist13@gmail.com](mailto:mrketanartist13@gmail.com)
-* GitHub: https://github.com/your-username
+* GitHub: https://github.com/itsketangupta
 
 ---
 
