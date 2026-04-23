@@ -29,6 +29,37 @@ Quizify is an AI-powered quiz platform that helps users generate, explore, and i
 
 ---
 
+## 📸 Preview
+
+> Add screenshots here (recommended)
+
+```
+<img width="1920" height="1004" alt="image" src="https://github.com/user-attachments/assets/60375398-b780-4de7-b91c-ec956b3dcaf2" />
+
+```
+
+---
+
+## 🚀 Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/itsketangupta/quizify.git
+```
+
+### 2. Navigate to project folder
+
+```bash
+cd quizify
+```
+
+### 3. Open in browser
+
+Just open `index.html` or run with Live Server.
+
+---
+
 ## 📌 Roadmap
 
 * [ ] AI quiz generator integration
@@ -39,12 +70,25 @@ Quizify is an AI-powered quiz platform that helps users generate, explore, and i
 
 ---
 
+## 🤝 Contributing
+
+Contributions are welcome!
+
+If you’d like to improve Quizify:
+
+1. Fork the repo
+2. Create a new branch
+3. Make your changes
+4. Submit a pull request
+
+---
+
 ## 📬 Contact
 
 If you have ideas, feedback, or want to collaborate:
 
 * Email: [mrketanartist13@gmail.com](mailto:mrketanartist13@gmail.com)
-* GitHub: https://github.com/itsketangupta
+* GitHub: https://github.com/your-username
 
 ---
 
