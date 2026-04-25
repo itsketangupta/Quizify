@@ -1,90 +1,71 @@
-# 🚀 Quizify
+# Quizify
 
-Quizify is an AI-powered quiz platform that helps users generate, explore, and interact with quizzes easily. The goal is to make learning faster, smarter, and more engaging using modern web technologies and AI.
+Quizify started as a simple idea to make learning more interactive and less boring.
 
----
-
-## 🌐 Live Demo
-
-👉 https://goquizify.vercel.app
+This is not the final product. It is an early version where I am experimenting with how a quiz or Q&A platform could work, especially with AI in the future.
 
 ---
 
-## ✨ Features
+## What this project is
 
-* 🧠 AI-powered quiz generation *(planned / in progress)*
-* ⚡ Fast and lightweight interface
-* 🎯 Simple and clean user experience
-* 📱 Responsive design (works on mobile & desktop)
-* 📩 Waitlist system (for early users)
+At the moment, Quizify is a basic frontend project that represents the core idea.
 
----
+The goal is to eventually build a platform where:
 
-## 🛠️ Tech Stack
-
-* Frontend: HTML, CSS, JavaScript
-* Hosting: Vercel
-* Backend (planned): Node.js / Firebase / APIs
-* AI Integration (planned): OpenAI / other AI APIs
+* quizzes can be generated from any topic
+* users can create and explore questions easily
+* learning feels more like interaction than a test
 
 ---
 
-## 📸 Preview
+## Current state
 
-<img width="1920" height="1004" alt="image" src="https://github.com/user-attachments/assets/60375398-b780-4de7-b91c-ec956b3dcaf2" />
+* Static frontend built with HTML, CSS, and JavaScript
+* Simple layout to represent the idea
+* Hosted on Vercel
 
-## 🚀 Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/itsketangupta/quizify.git
-```
-
-### 2. Navigate to project folder
-
-```bash
-cd quizify
-```
-
-### 3. Open in browser
-
-Just open `index.html` or run with Live Server.
+Live demo: https://goquizify.vercel.app
 
 ---
 
-## 📌 Roadmap
+## Why I made this
 
-* [ ] AI quiz generator integration
-* [ ] User authentication
-* [ ] Save & share quizzes
-* [ ] Analytics dashboard
-* [ ] Full backend support
+I felt that traditional quizzes are often boring, which makes learning less engaging.
+
+I wanted to explore the idea of making quizzes more interactive and useful, instead of just a list of questions.
 
 ---
 
-## 🤝 Contributing
+## Tech used
 
-Contributions are welcome!
+* HTML
+* CSS
+* JavaScript
 
-If you’d like to improve Quizify:
-
-1. Fork the repo
-2. Create a new branch
-3. Make your changes
-4. Submit a pull request
+The project is kept simple for now, with the main focus on the idea.
 
 ---
 
-## 📬 Contact
+## What’s next
 
-If you have ideas, feedback, or want to collaborate:
-
-* Email: [mrketanartist13@gmail.com](mailto:mrketanartist13@gmail.com)
-* GitHub: https://github.com/itsketangupta
+* Add AI-based quiz generation
+* Improve the UI
+* Allow users to create their own quizzes
+* Possibly add authentication
 
 ---
 
-## ⭐ Support
+## Note
 
-If you like this project, give it a ⭐ on GitHub!
+This project is still in an early stage, so some parts may feel incomplete or basic.
+
+---
+
+## Links
+
+GitHub: https://github.com/itsketangupta/Quizify
+Demo: https://goquizify.vercel.app
+
+---
+
+Thank you for checking this project.
