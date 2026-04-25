@@ -28,6 +28,32 @@ Live demo: https://goquizify.vercel.app
 
 ---
 
+## How to run this project locally
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/itsketangupta/Quizify.git
+```
+
+### 2. Open the project folder
+
+```bash
+cd Quizify
+```
+
+### 3. Run the project
+
+Since this is a simple frontend project, you can just open the `index.html` file in your browser.
+
+Or, if you are using VS Code:
+
+* install the "Live Server" extension
+* right click on `index.html`
+* click "Open with Live Server"
+
+---
+
 ## Why I made this
 
 I felt that traditional quizzes are often boring, which makes learning less engaging.
